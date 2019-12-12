@@ -1,0 +1,33 @@
+{
+  "name": "hapi-proxy-get",
+  "version": "0.1.0",
+  "description": "Hapi plugin to proxy get requests",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ajaxscape/hapi-proxy-get.git"
+  },
+  "keywords": [
+    "hapi",
+    "proxy",
+    "get",
+    "route",
+    "plugin",
+    "hapi-plugin"
+  ],
+  "author": "Ben Surgison",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ajaxscape/hapi-proxy-get/issues"
+  },
+  "homepage": "https://github.com/ajaxscape/hapi-proxy-get#readme",
+  "dependencies": {
+    "@hapi/h2o2": "^8.3.2"
+  },
+  "devDependencies": {
+    "standard": "^14.3.1"
+  }
+}

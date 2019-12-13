@@ -11,6 +11,7 @@ const register = function (server, opts = {}) {
     path: `${path}/{path*}`,
     handler: {
       proxy: {
+        passThrough: true,
         mapUri: (request) => {
           const { path } = request.params
           const query = querystring.stringify(request.query)

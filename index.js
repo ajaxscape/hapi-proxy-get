@@ -5,7 +5,7 @@ const register = function (server, opts = {}) {
   // Set options with defaults if required
   const { path = '/proxy', uri, options = {} } = opts
 
-  if (!server.plugins.h2o2.name) {
+  if (!server.plugins[h2o2.name]) {
     server.register([h2o2])
   }
 

@@ -1,10 +1,13 @@
 const querystring = require('querystring')
+const h2o2 = require('@hapi/h2o2')
 
 const register = function (server, opts = {}) {
   // Set options with defaults if required
   const { path = '/proxy', uri, options = {} } = opts
 
-  server.register([require('@hapi/h2o2')])
+  if (!server.plugins.h2o2.name) {
+    server.register([h2o2])
+  }
 
   server.route({
     method: 'GET',
